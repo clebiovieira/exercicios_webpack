@@ -1,12 +1,5 @@
-const produto = {
-    nome: 'Caneta Bic',
-    preco: 1.90,
-    desconto: 0.05
-}
-function clone(objeto){
-    return {...objeto}
-}
-
-const novoProduto = clone(produto)
-novoProduto.nome = 'Caneta bic azul'
-console.log(produto, novoProduto)
+import 'react'
+export default props =>(
+    <h1>ola</h1>
+)
+console.log('funcionou')
