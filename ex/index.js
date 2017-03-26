@@ -1,3 +1,12 @@
-import Pessoa from './pessoa'
-const pessoa = new Pessoa('Guilherme')
-console.log(pessoa.toString())
+const produto = {
+    nome: 'Caneta Bic',
+    preco: 1.90,
+    desconto: 0.05
+}
+function clone(objeto){
+    return {...objeto}
+}
+
+const novoProduto = clone(produto)
+novoProduto.nome = 'Caneta bic azul'
+console.log(produto, novoProduto)
