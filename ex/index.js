@@ -1,3 +1,3 @@
-const logger = require('./logger')
-logger.info('Usando o padrao CommonsJS!!!')
-require('./duvidaCruel')
+import Pessoa from './pessoa'
+const pessoa = new Pessoa('Guilherme')
+console.log(pessoa.toString())

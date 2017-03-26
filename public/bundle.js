@@ -42,27 +42,19 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	const logger = __webpack_require__(1)
-	logger.info('Usando o padrao CommonsJS!!!')
-	__webpack_require__(2)
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	function info(text){
-		console.log(`INFO: ${text}`)
+	class Pessoa{
+	    constructor(nome){
+	        this.nome = nome
+	    }
+	    toString(){
+	        return `Pessoa: ${this.nome}`
+	    }
 	}
 
-	module.exports = { info }
-
-/***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	console.log('sou carregado')
+	const pessoa = new Pessoa('Guilherme')
+	console.log(pessoa.toString())
 
 /***/ }
 /******/ ]);
